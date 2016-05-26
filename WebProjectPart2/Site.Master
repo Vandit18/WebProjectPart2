@@ -14,7 +14,8 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-     <nav class="navbar navbar-inverse">
+     <form id="form1" runat="server">
+         <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -30,17 +31,16 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-        <li class="active">
+        <li id="home" runat="server">
             <a href="Default.aspx"><i class="fa fa-home fa-lg"></i> Home</a></li>
-       <li><a href="Product.aspx"><i class="fa fa-th fa-lg"></i> Product</a></li>
-                <li><a href="Service.aspx"><i class="fa fa-gear fa-lg"></i> Service</a></li>
-                <li><a href="About.aspx"><i class="fa fa-info fa-lg"></i> About Us</a></li>
-                <li><a href="Contact.aspx"><i class="fa fa-phone fa-lg"></i> Contact Us</a></li>
+       <li id="product" runat="server"><a href="Product.aspx"><i class="fa fa-th fa-lg"></i> Product</a></li>
+                <li id="service" runat="server"><a href="Service.aspx"><i class="fa fa-gear fa-lg"></i> Service</a></li>
+                <li id="about" runat="server"><a href="AboutMe.aspx"><i class="fa fa-info fa-lg"></i> About Us</a></li>
+                <li id="Contact" runat="server"><a href="ContactUs.aspx"><i class="fa fa-phone fa-lg"></i> Contact Us</a></li>
             </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-    <form id="form1" runat="server">
     <div>
         <asp:ContentPlaceHolder ID="MainContent" runat="server">
         
